@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aura-server"
+version = "0.1.0"
+description = "REST API Server for the aura app"
+authors = ["Dyllon <dyllon001@e.ntu.edu.sg>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = {extras = ["standard"], version = "^0.17.0"}
+fastapi = "uvicorn[standard]"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
