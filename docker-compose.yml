@@ -1,6 +1,18 @@
 version: '3.3'
 services:
-    aura-server-fastapi:
+    api-server:
         build: .
         ports:
-            - '80:80' # outside:inside
+            - '8000:8000' # outside:inside
+    db:
+        image: "mcr.microsoft.com/mssql/server"
+        ports:
+            - '1433:1433'
+        volumes:
+            - 'db_data:/var/opt/mssql'
+        environment:
+            SA_PASSWORD: "Your_password123" # change this
+            ACCEPT_EULA: "Y"
+
+volumes:
+  db_data:
