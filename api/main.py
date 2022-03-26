@@ -17,4 +17,4 @@ def read_buses():
 # debug
 def start_dev():
     """Launched with `poetry run start_dev` at root level"""
-    uvicorn.run("api.main:app", host="0.0.0.0", port=80, reload=True)
+    uvicorn.run("api.main:app", host="0.0.0.0", port=8000, reload=True)
