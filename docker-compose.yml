@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+    aura-server-fastapi:
+        build: .
+        ports:
+            - '80:80' # outside:inside

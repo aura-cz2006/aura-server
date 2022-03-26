@@ -1,5 +1,10 @@
 # aura-server
 
+## Run in Production
+1. Install docker or docker desktop
+2. Run `docker compose up -d`
+3. Profit
+
 ## Pre-requisite
 
 - Python 3 (via Pyenv - https://github.com/pyenv/pyenv)
@@ -12,7 +17,9 @@ Install pyenv
 // todo
 
 Install the latest version of python with pyenv
-``pyenv install 3.10.3``
+`pyenv install 3.10.3`
+`pyenv local 3.10.3`
+
 
 Always run commands within the poetry shell. Create a shell with  
 `poetry shell`
@@ -21,7 +28,7 @@ Install dependencies with
 `poetry install`
 
 To run the api server:  
-`poetry run uvicorn main:app --reload`
+`poetry run dev`
 
 ### Poetry Shell Commands
 
