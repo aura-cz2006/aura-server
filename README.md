@@ -2,11 +2,17 @@
 
 ## Pre-requisite
 
-- Python 3
+- Python 3 (via Pyenv - https://github.com/pyenv/pyenv)
 - Pip
 - Poetry (https://python-poetry.org/docs/master/#installing-with-the-official-installer)
 
 ## Setup
+
+Install pyenv
+// todo
+
+Install the latest version of python with pyenv
+``pyenv install 3.10.3``
 
 Always run commands within the poetry shell. Create a shell with  
 `poetry shell`
@@ -36,3 +42,7 @@ Access swagger docs by visiting `https://127.0.0.1:8000/docs`
 Install the Postman app to test the HTTP responses during development: https://www.postman.com/
 
 Create a new request in postman, and ping to root endpoint to check server health
+
+## Running Test Suites
+
+Run `poetry run pytest`

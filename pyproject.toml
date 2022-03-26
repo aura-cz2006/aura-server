@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.10"
 uvicorn = {extras = ["standard"], version = "^0.17.0"}
 fastapi = "uvicorn[standard]"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
 
