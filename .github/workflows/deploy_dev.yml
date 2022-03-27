@@ -5,7 +5,6 @@ name: deploy to development
 # Controls when the workflow will run
 on:
   # Triggers the workflow on pull request events but only for the production branch
-  push:
   pull_request:
     branches: [main]
 
@@ -85,8 +84,6 @@ jobs:
           password: ${{ secrets.ECS_ROOT_PASSWORD }}
           script: |
             docker pull ghcr.io/${{ github.repository }}:${{ github.sha }}
-            pwd
-            ls
             cd aura-server
             wget https://raw.githubusercontent.com/${{ github.repository }}/main/docker-compose.yml -O docker-compose.yml
             docker-compose up -d
