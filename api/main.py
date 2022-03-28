@@ -1,7 +1,15 @@
 import uvicorn
 from fastapi import FastAPI
+from .routers import news #, map, community
+
 
 app = FastAPI()
+app.include_router(
+    news.router,
+    prefix="/news")
+
+# app.include_router(map.router)
+# app.include_router(community.router)
 
 
 @app.get("/")
