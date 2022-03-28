@@ -1,25 +1,26 @@
 import uvicorn
 from fastapi import FastAPI
-from .routers import news #, map, community
+
+from api.routers import discussions
+from .routers import news  # ,`` map, community
 
 
 app = FastAPI()
+
+
 app.include_router(
     news.router,
     prefix="/news")
 
-# app.include_router(map.router)
-# app.include_router(community.router)
+
+app.include_router(
+    discussions.router,
+    prefix="/discussions")
 
 
-@app.get("/")
+@app.get("/", summary="root route", description="", tags=["root"])
 def read_root():
     return {"isHealthy": True, "caresAboutYou": "❤️", }
-
-
-@app.get("/buses")
-def read_buses():
-    return {"routes": []}
 
 
 # debug
