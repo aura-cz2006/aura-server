@@ -11,8 +11,10 @@ uvicorn = {extras = ["standard"], version = "^0.17.0"}
 fastapi = "uvicorn[standard]"
 pytest = "^6.2.5"
 requests = "^2.27.1"
+pytest-watch = "^4.2.0"
 
 [tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
 
 [tool.poetry.scripts]
 dev = "api.main:start_dev"
