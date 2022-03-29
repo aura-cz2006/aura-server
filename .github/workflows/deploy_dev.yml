@@ -4,8 +4,8 @@ name: deploy to development
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on pull request events but only for the production branch
-  pull_request:
+  # Triggers the workflow on push events but only for the production branch
+  push:
     branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -23,8 +23,8 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v2
 
-#      - name: docker compose
-#        run: docker compose up -d
+      #      - name: docker compose
+      #        run: docker compose up -d
 
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1
@@ -33,11 +33,11 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-#      - name: Extract metadata (tags, labels) for Docker
-#        id: meta
-#        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
-#        with:
-#          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      #      - name: Extract metadata (tags, labels) for Docker
+      #        id: meta
+      #        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+      #        with:
+      #          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Build and push
         uses: docker/build-push-action@v2
@@ -46,31 +46,27 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:${{ github.sha }}
             ghcr.io/${{ github.repository }}:latest
-            
-#      - name:
-#        uses: appleboy/ssh-action@master
-#        with:
-#          host: 110.238.111.52 # ${{ secrets.HOST }}
-#          username: root # ${{ secrets.USERNAME }}
-#          password: ${{ secrets.ECS_ROOT_PASSWORD }}
-#          script: |
-#            whoami
-#            ls -al
 
-        # huawei cloud project admin won't allow use of keys
-#      - name: pull and run on huawei cloud server
-#        run: |
-#          ssh-keyscan 110.238.111.52 >> ~/.ssh/known_hosts
-#          sshpass -p ${{ secrets.ECS_ROOT_PASSWORD }} ssh root@110.238.111.52
-#          docker pull ghcr.io/${{ github.repository }}:${{ github.sha }}
-#          cd aura-server
-#          curl https://raw.githubusercontent.com/${{ github.repository }}/main/docker-compose.yml
-#          curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
-#          docker compose up -d
-          
-          
-          
+  #      - name:
+  #        uses: appleboy/ssh-action@master
+  #        with:
+  #          host: 110.238.111.52 # ${{ secrets.HOST }}
+  #          username: root # ${{ secrets.USERNAME }}
+  #          password: ${{ secrets.ECS_ROOT_PASSWORD }}
+  #          script: |
+  #            whoami
+  #            ls -al
 
+  # huawei cloud project admin won't allow use of keys
+  #      - name: pull and run on huawei cloud server
+  #        run: |
+  #          ssh-keyscan 110.238.111.52 >> ~/.ssh/known_hosts
+  #          sshpass -p ${{ secrets.ECS_ROOT_PASSWORD }} ssh root@110.238.111.52
+  #          docker pull ghcr.io/${{ github.repository }}:${{ github.sha }}
+  #          cd aura-server
+  #          curl https://raw.githubusercontent.com/${{ github.repository }}/main/docker-compose.yml
+  #          curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
+  #          docker compose up -d
 
   deploy:
     runs-on: ubuntu-latest
@@ -88,4 +84,3 @@ jobs:
             wget https://raw.githubusercontent.com/${{ github.repository }}/main/docker-compose.yml -O docker-compose.yml
             docker-compose up -d
             rm -rf docker-compose.yml
-          
