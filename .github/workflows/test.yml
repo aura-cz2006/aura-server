@@ -1,0 +1,29 @@
+# Run tests
+
+name: deploy to development
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events
+  push:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build-image:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: test on poetry
+        run: |
+          poetry shell
+          poetry install
+          pytest
