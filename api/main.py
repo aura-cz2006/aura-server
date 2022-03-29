@@ -13,9 +13,9 @@ app.include_router(
     prefix="/news")
 
 
-app.include_router(
-    discussions.router,
-    prefix="/discussions")
+# app.include_router(
+#     discussions.router,
+#     prefix="/discussions")
 
 
 @app.get("/", summary="root route", description="", tags=["root"])
