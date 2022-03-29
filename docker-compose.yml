@@ -4,12 +4,14 @@ services:
         image: "ghcr.io/aura-cz2006/aura-server:latest"
         ports:
             - '80:8000'
+        volumes:
+            - './ssl:/code/ssl'
     db:
         image: "mcr.microsoft.com/mssql/server"
         ports:
             - '1433:1433' # todo: don't expose this to the host!!!
         volumes:
-            - 'db_data:/var/opt/mssql'
+            - './db_data:/var/opt/mssql'
         environment:
             SA_PASSWORD: "Your_password123" # change this
             ACCEPT_EULA: "Y"
