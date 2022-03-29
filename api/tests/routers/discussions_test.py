@@ -1,6 +1,6 @@
 from api.main import app
 from fastapi.testclient import TestClient
-from api.models.discussions import DiscussionItem, Topics
+from api.models.discussions_model import DiscussionItem, Topics
 from api.routers import discussions
 
 ############

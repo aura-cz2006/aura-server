@@ -1,7 +1,7 @@
 from typing import Optional
 from fastapi import APIRouter
 
-from api.models.discussions import DiscussionItem, Topics
+from api.models.discussions_model import DiscussionItem, Topics
 
 router = APIRouter()
 
