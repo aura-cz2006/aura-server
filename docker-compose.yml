@@ -1,8 +1,8 @@
 version: '3.3'
 services:
     api-server:
-        build: .
-        # image: "ghcr.io/aura-cz2006/aura-server:latest"
+        # build: .
+        image: "ghcr.io/aura-cz2006/aura-server:latest"
         ports:
             - '80:8000'
         volumes:
