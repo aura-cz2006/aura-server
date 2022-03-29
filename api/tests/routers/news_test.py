@@ -1,3 +1,4 @@
+from api.fixtures.news_fixtures import news_fixtures
 from api.main import app
 from fastapi.testclient import TestClient
 from api.routers import news
@@ -8,20 +9,18 @@ from api.routers import news
 client = TestClient(news.router)
 
 
-def test_read_news():
+def test_read_news(news_fixtures):
     response = client.get('/')
     assert response.status_code == 200
-    assert response.json() == [
-        {'id': '1', 'title': 'Nicole promoted to Head Psychologist in IMH'},
-        {'id': '2', 'title': 'New cat murderer in Yishun'}
-    ]
+    assert response.json() == news_fixtures
+        
 
 
-def test_read_news_item():
+
+def test_read_news_item(news_fixtures):
     response = client.get('/2')
     assert response.status_code == 200
-    assert response.json() == {'id': '2',
-                               'title': 'New cat murderer in Yishun'}
+    assert response.json() == news_fixtures[1]
 
 ##########################
 # test router integration
@@ -30,10 +29,7 @@ def test_read_news_item():
 rootClient = TestClient(app)
 
 
-def test_read_news():
+def test_read_news(news_fixtures):
     response = rootClient.get('/news')
     assert response.status_code == 200
-    assert response.json() == [
-        {'id': '1', 'title': 'Nicole promoted to Head Psychologist in IMH'},
-        {'id': '2', 'title': 'New cat murderer in Yishun'}
-    ]
+    assert response.json() == news_fixtures

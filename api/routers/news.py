@@ -1,11 +1,15 @@
 from dataclasses import dataclass
 from datetime import datetime
+from pydoc_data.topics import topics
 from typing import Optional, Sequence
 from fastapi import APIRouter
 
 from api.models.news_model import NewsItem
-
 router = APIRouter()
+
+@dataclass
+class NewsList:
+    news: list[NewsItem]
 
 # dummy news data
 news = [
@@ -62,15 +66,13 @@ news = [
 ]
 
 
-@router.get("/", 
-            # response_model=[NewsItem],
-            # ^^^ # can the hot girl figure this out pls?
-            summary="Gets news items",
-            description="You can provide a filter via query param",
+@router.get("/",
+            # response_model=NewsList, # <-- breaks docs
+            summary="Get news list",
+            description="Gets list of all news items from the database",
             tags=["news"])
 def read_news(filter: Optional[str] = ""):
-
-    return news
+    return { "news": news }
 
 
 @router.get("/{news_id}",
