@@ -1,10 +1,8 @@
 import uvicorn
 from fastapi import FastAPI
-from fastapi.middleware.trustedhost import TrustedHostMiddleware
-from fastapi.middleware.gzip import GZipMiddleware
 
-from api.routers import discussions
-from .routers import news  # ,`` map, community
+
+from .routers import news
 
 
 app = FastAPI()
@@ -19,6 +17,8 @@ app.include_router(
 #     discussions.router,
 #     prefix="/discussions")
 
+print(__name__)
+
 
 @app.get("/", summary="root route", description="", tags=["root"])
 def read_root():
@@ -32,11 +32,6 @@ def start_dev():
 
 
 def start_prod():
-    app.add_middleware(
-        TrustedHostMiddleware, allowed_hosts=["aura-app.xyz", "*.aura-app.xyz"]
-    )
-    app.add_middleware(GZipMiddleware, minimum_size=1000)
-
     uvicorn.run("api.main:app",
                 host="0.0.0.0",
                 port=8000,
