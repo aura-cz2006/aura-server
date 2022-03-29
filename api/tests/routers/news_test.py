@@ -13,8 +13,6 @@ def test_read_news(news_fixtures):
     response = client.get('/')
     assert response.status_code == 200
     assert response.json() == news_fixtures
-        
-
 
 
 def test_read_news_item(news_fixtures):
@@ -29,7 +27,8 @@ def test_read_news_item(news_fixtures):
 rootClient = TestClient(app)
 
 
-def test_read_news(news_fixtures):
+def test_root_read_news(news_fixtures):
+
     response = rootClient.get('/news')
     assert response.status_code == 200
     assert response.json() == news_fixtures
