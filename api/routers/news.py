@@ -7,9 +7,11 @@ from fastapi import APIRouter
 from api.models.news_model import DengueNewsItem, NewsItem, NewsType
 router = APIRouter()
 
+
 @dataclass
 class NewsList:
     news: list[NewsItem]
+
 
 # dummy news data
 news = [
@@ -78,7 +80,7 @@ news = [
 dengue_news_sample = [DengueNewsItem(id="1", newstype=NewsType.Dengue, date=datetime.fromisoformat("2019-12-04"))]
 
 
-@router.get("/",
+@router.get("",
             # response_model=NewsList, # <-- breaks docs
             summary="Get news list",
             description="Gets list of all news items from the database",

@@ -82,5 +82,6 @@ jobs:
             docker pull ghcr.io/${{ github.repository }}:${{ github.sha }}
             cd aura-server
             wget https://raw.githubusercontent.com/${{ github.repository }}/main/docker-compose.yml -O docker-compose.yml
+            docker-compose pull
             docker-compose up -d
             rm -rf docker-compose.yml
