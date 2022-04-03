@@ -1,12 +1,12 @@
 from api.fixtures.news_fixtures import news_fixtures
 from api.main import app
 from fastapi.testclient import TestClient
-from api.routers import news
+from api.routers import news_old
 
 ###############################
 # unit tests
 
-client = TestClient(news.router)
+client = TestClient(news_old.router)
 
 
 def test_read_news(news_fixtures):

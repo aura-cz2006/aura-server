@@ -8,13 +8,13 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.9.10"
 uvicorn = {extras = ["standard"], version = "^0.17.0"}
-fastapi = "uvicorn[standard]"
-pytest = "^6.2.5"
 requests = "^2.27.1"
-pytest-watch = "^4.2.0"
+fastapi = "^0.75.1"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
 autopep8 = "^1.6.0"
+pytest-watch = "^4.2.0"
 
 [tool.poetry.scripts]
 dev = "api.main:start_dev"

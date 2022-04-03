@@ -1,9 +1,9 @@
-# from typing import Optional
-# from fastapi import APIRouter
+from typing import Optional
+from fastapi import APIRouter
 
-# from api.models.discussions_model import DiscussionItem, Topics
+from api.models.discussions_model import DiscussionItem, Topics
 
-# router = APIRouter()
+router = APIRouter()
 
 
 # discussions = [

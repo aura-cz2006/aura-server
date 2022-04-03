@@ -1,17 +1,21 @@
-# from dataclasses import dataclass
-# from enum import Enum
+from dataclasses import dataclass
+from enum import Enum
+
+from api.models.comments_model import CommentItem
 
 
-# @dataclass
-# class Topics(Enum):
-#     General = 1
-#     Nature = 2
-#     Tech = 3
-#     Food = 4
-#     Sports = 5
+@dataclass
+class Topics(Enum):
+    General = 'General'
+    Nature = 'Nature'
+    Tech = 'Tech'
+    Food = 'Food'
+    Sports = 'Sports'
 
-# @dataclass
-# class DiscussionItem:
-#     id: str
-#     topic: Topics
-#     title: str
+
+@dataclass
+class DiscussionItem:
+    id: str
+    title: str
+    topic: Topics
+    comments: list[CommentItem]

@@ -1,27 +1,38 @@
 
-from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum
 from typing import Optional
 
 from pydantic import BaseModel
 
-@dataclass
+
 class NewsType(str, Enum):
-    Dengue = 'Dengue'
-    Marketclosure = 'Market_Closure'
-    CCevents = 'CC_Event'
-    Upgradingworks = 'Upgrading_works'
+    dengue = 'dengue'
+    marketClosure = 'marketClosure'
+    ccEvents = 'ccEvent'
+    upgradingWorks = 'upgradingWorks'
+
 
 class NewsItem(BaseModel):
     id: str
     newstype: NewsType
+    # reopening for market closure, date for event, end date of upgrading works
     date: Optional[datetime]
-    
-# class DengueNewsItem(NewsItem):
-#     numCases: int
 
 
+class DengueNewsItem(NewsItem):
+    numCases: int
 
-# class MarketClosureNewsItem(NewsItem):
-    
+
+class MarketClosureNewsItem(NewsItem):
+    marketName: str
+
+
+class CCEventNewsItem(NewsItem):
+    eventTitle: str
+    url: str
+    fee: str
+
+
+class UpgradingNewsItem(NewsItem):
+    desc: str
