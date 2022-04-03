@@ -4,7 +4,7 @@ from pydoc_data.topics import topics
 from typing import Optional, Sequence
 from fastapi import APIRouter
 
-from api.models.news_model import NewsItem, NewsType
+from api.models.news_model import DengueNewsItem, NewsItem, NewsType
 router = APIRouter()
 
 @dataclass
@@ -75,6 +75,8 @@ news = [
     )
 ]
 
+dengue_news_sample = [DengueNewsItem(id="1", newstype=NewsType.Dengue, date=datetime.fromisoformat("2019-12-04"))]
+
 
 @router.get("/",
             # response_model=NewsList, # <-- breaks docs
@@ -82,10 +84,10 @@ news = [
             description="Gets list of all news items from the database",
             tags=["news"])
 def read_news(filter: Optional[str] = ""):
-    return { "news": news }
+    return news
 
 
-@router.get("/{news_id}",
+@router.get("{news_type}/{news_id}",
             #response_model=NewsItem, #  <-- this is breaking shit suddenly too 
             summary="Get a news item",
             description="Gets a news item from the database",

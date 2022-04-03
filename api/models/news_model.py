@@ -1,18 +1,27 @@
 
 from dataclasses import dataclass
+from datetime import datetime
 from enum import Enum
+from typing import Optional
+
+from pydantic import BaseModel
 
 @dataclass
-class NewsType(Enum):
-    Dengue = 1
-    Marketclosure = 2
-    CCevents = 3
-    Upgradingworks = 4
-@dataclass
-class NewsItem:
+class NewsType(str, Enum):
+    Dengue = 'Dengue'
+    Marketclosure = 'Market_Closure'
+    CCevents = 'CC_Event'
+    Upgradingworks = 'Upgrading_works'
+
+class NewsItem(BaseModel):
     id: str
-    title: str
     newstype: NewsType
-    # date: Optional[datetime]
+    date: Optional[datetime]
     
+# class DengueNewsItem(NewsItem):
+#     numCases: int
+
+
+
+# class MarketClosureNewsItem(NewsItem):
     
