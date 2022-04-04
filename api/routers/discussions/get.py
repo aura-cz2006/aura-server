@@ -8,14 +8,16 @@ router = APIRouter()
 
 discussions = sample_disc_data
 
-
 @router.get("/{topic}/threads", 
-            summary="Get all discussion threads",
-            description="Gets all discussions from the db",
+            summary="Get all discussion threads of a topic",
+            description="Gets all discussions of a certain topic from the db",
             tags=["discussions"])
 def read_discussions_threads(topic: str, filter: Optional[str] = ""):
-    return discussions
-
+    topiclist = []
+    for x in range(len(discussions)):
+        if discussions[x].topic == topic:
+            topiclist.append(discussions[x])        
+    return topiclist
 
 @router.get("/{topic}/threads/{discussion_id}",  
                     summary="Get a discussion item",
