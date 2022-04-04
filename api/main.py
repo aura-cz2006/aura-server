@@ -1,26 +1,26 @@
 import uvicorn
 from fastapi import FastAPI
-
-
-from .routers import news
+from .routers.news import get as news_get
+from .routers.discussions import get as discussions_get
 
 
 app = FastAPI()
 
-
+# news
 app.include_router(
-    news.router,
-    prefix="/news")
-
-
-# app.include_router(
-#     discussions.router,
-#     prefix="/discussions")
+    news_get.router,
+    prefix="/news"
+)
+# discussions
+app.include_router(
+    discussions_get.router,
+    prefix="/discussions"
+)
 
 print(__name__)
 
 
-@app.get("/", summary="root route", description="", tags=["root"])
+@app.get("/", summary="root route", description="used just to test ping the server", tags=["root"])
 def read_root():
     return {"isHealthy": True, "caresAboutYou": "❤️", }
 

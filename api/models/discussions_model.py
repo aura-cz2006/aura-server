@@ -1,17 +1,20 @@
-# from dataclasses import dataclass
-# from enum import Enum
+from enum import Enum
+from datetime import datetime
+from pydantic import BaseModel
+from api.models.comments_model import CommentItem
 
 
-# @dataclass
-# class Topics(Enum):
-#     General = 1
-#     Nature = 2
-#     Tech = 3
-#     Food = 4
-#     Sports = 5
+class Topics(str, Enum):
+    general = 'general'
+    nature = 'nature'
+    tech = 'tech'
+    food = 'food'
+    sports = 'sports'
 
-# @dataclass
-# class DiscussionItem:
-#     id: str
-#     topic: Topics
-#     title: str
+
+class DiscussionItem(BaseModel):
+    id: str
+    title: str
+    topic: Topics
+    comments: list[CommentItem]
+    date: datetime
