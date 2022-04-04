@@ -11,4 +11,5 @@ class MeetupItem(BaseModel):
     location: dict({'Lat': '0', 'Long': '0'})
     id: str
     maxAttendees: int
-    rsvpAttendees: 
+    rsvpAttendees: list[str]
+    

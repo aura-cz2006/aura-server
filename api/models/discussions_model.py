@@ -5,11 +5,11 @@ from api.models.comments_model import CommentItem
 
 
 class Topics(str, Enum):
-    General = 'General'
-    Nature = 'Nature'
-    Tech = 'Tech'
-    Food = 'Food'
-    Sports = 'Sports'
+    general = 'general'
+    nature = 'nature'
+    tech = 'tech'
+    food = 'food'
+    sports = 'sports'
 
 
 class DiscussionItem(BaseModel):
