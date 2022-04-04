@@ -16,8 +16,8 @@ class NewsType(str, Enum):
 class NewsItem(BaseModel):
     id: str
     newstype: NewsType
-    # reopening for market closure, date for event, end date of upgrading works
     date: Optional[datetime]
+    location: dict = ({'lat': 0.0, 'lng': 0.0})
 
 
 class DengueNewsItem(NewsItem):

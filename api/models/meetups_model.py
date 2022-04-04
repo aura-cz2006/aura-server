@@ -8,7 +8,7 @@ from pydantic import BaseModel
 class MeetupItem(BaseModel):
     title: str
     date: datetime
-    location: dict({'Lat': '0', 'Long': '0'})
+    location: dict = ({'lat': 0.0, 'lng': 0.0})
     id: str
     maxAttendees: int
     rsvpAttendees: list[str]

@@ -9,16 +9,8 @@ router = APIRouter()
 
 discussions = sample_disc_data
 
-@router.get("/",
-            summary="Get all discussions",
-            description="Gets a list of all discussions from the db",
-            tags={"discussions"}
-            )
-def get_news(
-):
-    return discussions
 
-@router.get("/{topic}/threads", 
+@router.get("/{topic}/threads",
             summary="Get all discussion threads of a topic",
             description="Gets all discussions of a certain topic from the db",
             tags=["discussions"])
