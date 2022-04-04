@@ -12,10 +12,10 @@ app.include_router(
     prefix="/news"
 )
 # discussions
-app.include_router(
-    discussions_get.router,
-    prefix="/discussions"
-)
+# app.include_router(
+#     discussions_get.router,
+#     prefix="/discussions"
+# )
 
 print(__name__)
 

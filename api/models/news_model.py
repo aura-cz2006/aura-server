@@ -26,6 +26,7 @@ class DengueNewsItem(NewsItem):
 
 class MarketClosureNewsItem(NewsItem):
     marketName: str
+    reopeningDate: datetime
 
 
 class CCEventNewsItem(NewsItem):
@@ -36,3 +37,4 @@ class CCEventNewsItem(NewsItem):
 
 class UpgradingNewsItem(NewsItem):
     desc: str
+    endDate: datetime
