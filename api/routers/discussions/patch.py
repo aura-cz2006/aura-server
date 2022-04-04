@@ -9,12 +9,12 @@ router = APIRouter()
 def patch_discussion_thread(topic: str,
                             thread_id: str,
                             title: Optional[str] = Form(...),
-                            body:  Optional[str] = Form(...),
+                            content:  Optional[str] = Form(...),
                             ):
     # todo: write to db
     return {"status": "Discussion updated successfully", "updatedPost": {
         "title": title,
         "thread_id": thread_id,
-        "body": body,
+        "content": content,
         "topic": topic
     }}

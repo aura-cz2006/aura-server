@@ -9,12 +9,12 @@ client = TestClient(router)
 def test_create_thread():
     response = client.post("/general/threads", data={
         "title": "some title",
-        "body": "some body"
+        "content": "some content"
     })
     assert response.status_code == 200
     assert response.json() == {
-        'createdPost': {'body': 'some body',
-                        'thread_id': '9',
+        'createdPost': {'content': 'some content',
+                        'id': '9',
                         'title': 'some title',
                         'topic': 'general'},
         'status': 'Discussion created successfully',

@@ -15,7 +15,9 @@ class Topics(str, Enum):
 class DiscussionItem(BaseModel):
     id: str
     title: str
-    body: str
+    content: str
     topic: Topics
     comments: list[CommentItem]
     date: datetime
+    userID: str
+    likedBy: list[str]
