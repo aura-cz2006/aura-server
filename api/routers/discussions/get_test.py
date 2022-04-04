@@ -7,7 +7,7 @@ client = TestClient(router)
 
 
 def test_get_threads():
-    response = client.get("/")
+    response = client.get("/general/threads")
     assert response.status_code == 200
     assert response.json() == [
     {
@@ -94,7 +94,7 @@ def test_get_single_disc_item():
     assert response.json() == {
         "id": "2",
         "title": "Best barber in the East?",
-        "topic": "General",
+        "topic": "general",
         "comments": [
             {
                 "id": "1",
