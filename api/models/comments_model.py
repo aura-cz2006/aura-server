@@ -1,9 +1,11 @@
 from dataclasses import dataclass
 from datetime import datetime
 
+from pydantic import BaseModel
 
-@dataclass
-class CommentItem:
+
+
+class CommentItem(BaseModel):
     id: str
     text: str
     user: str

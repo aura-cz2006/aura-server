@@ -9,7 +9,7 @@ from pydantic import BaseModel
 class NewsType(str, Enum):
     dengue = 'dengue'
     marketClosure = 'marketClosure'
-    ccEvents = 'ccEvent'
+    ccEvents = 'ccEvents'
     upgradingWorks = 'upgradingWorks'
 
 

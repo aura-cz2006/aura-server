@@ -3,7 +3,7 @@ from fastapi.testclient import TestClient
 
 
 client = TestClient(router)
-(router)
+# (router)
 
 
 def test_get_news():
@@ -15,13 +15,13 @@ def test_get_news():
          'newstype': 'dengue'},
         {'date': '2019-12-04T00:00:00',
          'id': '2',
-         'newstype': 'dengue'},
+         'newstype': 'ccEvents'},
         {'date': '2019-12-04T00:00:00',
          'id': '3',
-         'newstype': 'dengue'},
+         'newstype': 'marketClosure'},
         {'date': '2019-12-04T00:00:00',
          'id': '4',
-         'newstype': 'dengue'},
+         'newstype': 'upgradingWorks'},
         {'date': '2019-12-04T00:00:00',
          'id': '5',
          'newstype': 'dengue'},
@@ -47,4 +47,4 @@ def test_get_single_news_item():
     response = client.get("/2")
     assert response.status_code == 200
     assert response.json() == {
-        'date': '2019-12-04T00:00:00', 'id': '2', 'newstype': 'dengue'}
+        'date': '2019-12-04T00:00:00', 'id': '2', 'newstype': 'ccEvents'}

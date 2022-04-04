@@ -14,7 +14,7 @@ app.include_router(
 # discussions
 app.include_router(
     discussions_get.router,
-    prefix="/news"
+    prefix="/discussions"
 )
 
 print(__name__)

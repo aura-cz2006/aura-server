@@ -7,21 +7,21 @@ sample_news_data = [
     NewsItem(
         id="1",
         newstype=NewsType.dengue,
-        date=datetime.fromisoformat("2019-12-04")
+        date=datetime.fromisoformat("2019-12-04"),
     ),
     NewsItem(
         id="2",
-        newstype=NewsType.dengue,
+        newstype=NewsType.ccEvents,
         date=datetime.fromisoformat("2019-12-04"),
     ),
     NewsItem(
         id="3",
-        newstype=NewsType.dengue,
+        newstype=NewsType.marketClosure,
         date=datetime.fromisoformat("2019-12-04"),
     ),
     NewsItem(
         id="4",
-        newstype=NewsType.dengue,
+        newstype=NewsType.upgradingWorks,
         date=datetime.fromisoformat("2019-12-04"),
     ),
     NewsItem(

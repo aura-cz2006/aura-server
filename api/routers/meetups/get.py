@@ -1,7 +1,7 @@
 from typing import Optional
 from fastapi import APIRouter, HTTPException
 
-from api.models.discussions_model import DiscussionItem, Topics
+from api.models.discussions_model import MeetupItem, Topics
 from api.sample.sample_disc_data import sample_disc_data
 
 router = APIRouter()
