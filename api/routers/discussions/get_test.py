@@ -11,20 +11,35 @@ def test_get_threads():
     response = client.get("/general/threads")
     assert response.status_code == 200
     assert response.json() == [
-
-        {'body': 'Some body for the discussion',
-         'comments': [],
-         'date': '2019-12-04T00:00:00',
-         'id': '1',
-         'title': 'Where is the cleanest toilet in Singapore?',
-         'topic': 'general'},
-        {'body': 'Some body for the discussion',
-         'comments': [],
-         'date': '2019-12-04T00:00:00',
-         'id': '2',
-         'title': 'Best barber in the East?',
-         'topic': 'general'},
-    ]
+    {
+        "id": "1",
+        "title": "Where is the cleanest toilet in Singapore?",
+        "content": "Some content for the discussion",
+        "topic": "general",
+        "comments": [],
+        "date": "2019-12-04T00:00:00",
+        "userID": "1",
+        "likedBy": [
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Best barber in the East?",
+        "content": "Some content for the discussion",
+        "topic": "general",
+        "comments": [],
+        "date": "2019-12-04T00:00:00",
+        "userID": "2",
+        "likedBy": [
+            "1",
+            "2",
+            "3"
+        ]
+    }
+]
 
 
 def test_get_threads_unexpected_topic():
@@ -38,12 +53,18 @@ def test_get_single_disc_item():
     response = client.get("/general/threads/2")
     assert response.status_code == 200
     assert response.json() == {
-        'body': 'Some body for the discussion',
-        'comments': [],
-        'date': '2019-12-04T00:00:00',
-        'id': '2',
-        'title': 'Best barber in the East?',
-        'topic': 'general',
+        "id": "2",
+        "title": "Best barber in the East?",
+        "content": "Some content for the discussion",
+        "topic": "general",
+        "comments": [],
+        "date": "2019-12-04T00:00:00",
+        "userID": "2",
+        "likedBy": [
+            "1",
+            "2",
+            "3"
+        ]
     }
 
 
