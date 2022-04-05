@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from .routers.news import get as news_get
 from .routers.discussions import get as discussions_get, post as discussions_post, patch as discussions_patch, delete as discussions_delete
-
+from .routers.meetups import get as meetups_get, post as meetups_post, patch as meetups_patch, delete as meetups_delete
 
 app = FastAPI()
 
@@ -30,6 +30,26 @@ app.include_router(
     prefix="/discussions"
 )
 
+#meetups
+app.include_router(
+    meetups_get.router,
+    prefix="/meetups"
+)
+
+app.include_router(
+    meetups_post.router,
+    prefix="/meetups"
+)
+
+app.include_router(
+    meetups_patch.router,
+    prefix="/meetups"
+)
+
+app.include_router(
+    meetups_delete.router,
+    prefix="/meetups"
+)
 print(__name__)
 
 

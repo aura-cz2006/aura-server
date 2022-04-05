@@ -13,9 +13,11 @@ def test_update_thread():
     })
     assert response.status_code == 200
     assert response.json() == {
-        'updatedPost': {'content': 'new content',
-                        'id': '2',
-                        'title': 'new title',
-                        'topic': 'general'},
-        'status': 'Discussion updated successfully',
-    }
+  "status": "Discussion updated successfully",
+  "updatedPost": {
+    "title": "new title",
+    "thread_id": "2",
+    "content": "new content",
+    "topic": "general"
+  }
+}
