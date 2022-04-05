@@ -4,6 +4,8 @@ from .routers.discussions import get as discussions_get, post as discussions_pos
 from .routers.discussions.comments import post as discussions_comments_post, delete as discussions_comments_delete
 from .routers.meetups import get as meetups_get, post as meetups_post, patch as meetups_patch, delete as meetups_delete
 from .routers.meetups.comments import post as meetups_comments_post, delete as meetups_comments_delete
+from fastapi.staticfiles import StaticFiles
+
 
 app = FastAPI()
 
@@ -40,7 +42,7 @@ app.include_router(
     prefix="/discussions"
 )
 
-#meetups
+# meetups
 app.include_router(
     meetups_get.router,
     prefix="/meetups"
@@ -69,7 +71,9 @@ app.include_router(
     prefix="/discussions"
 )
 
-#comments
+# static files
+app.mount("/static", StaticFiles(directory="api/static"), name="static")
+
 
 print(__name__)
 
