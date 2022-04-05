@@ -8,8 +8,8 @@ router = APIRouter()
 @router.patch("/{topic}/threads/{thread_id}", summary="", description="", tags=["discussions"])
 def patch_discussion_thread(topic: str,
                             thread_id: str,
-                            title: Optional[str] = Form(...),
-                            content:  Optional[str] = Form(...),
+                            title: Optional[str] = Form(None),
+                            content:  Optional[str] = Form(None)
                             ):
     # todo: write to db
     return {"status": "Discussion updated successfully", "updatedPost": {
