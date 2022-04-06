@@ -130,7 +130,6 @@ app.include_router(
 app.mount("/static", StaticFiles(directory="api/static"), name="static")
 
 
-
 print(__name__)
 
 
@@ -142,7 +141,7 @@ def read_root():
 # debug
 def start_dev():
     """Launched with `poetry run start_dev` at root level"""
-    uvicorn.run("api.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("api.main:app", host="0.0.0.0", port=8008, reload=True)
 
 
 def start_prod():
