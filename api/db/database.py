@@ -8,6 +8,6 @@ conn = MySQLDatabase(
     db_name,
     user=user,
     password=password,
-    host='172.28.1.2'
-    # host='localhost'
+    # host='172.28.1.2'
+    host='localhost'
 )

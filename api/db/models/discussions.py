@@ -2,6 +2,7 @@ import datetime
 from peewee import *
 
 from ..db_base_model import DbBaseModel
+from .users import DbUser
 
 
 class DbDiscussion(DbBaseModel):
@@ -10,22 +11,30 @@ class DbDiscussion(DbBaseModel):
     content = CharField(max_length=2048)
     topic = CharField(max_length=255)
     date = DateTimeField()
-    author_user_id = CharField(max_length=255)
+    author_user_id = ForeignKeyField(DbUser)
 
     class Meta:
         db_table = 'discussions'
 
 
 def get_discussions():
-    discussions_query = DbDiscussion.select()
+    query = DbDiscussion.select()
+    print(f"length of query return: {len(query)}")
     discussions = []
-    for discussion in discussions_query:
+    for discussion in query:
+        data = discussion.__data__
+        data.__setitem__("liked_by", [])
+        data.__setitem__("comments_by", [])
         discussions.append(discussion.__data__)
-        return discussions
+
+    return discussions
 
 
 def get_discussion(id: str):
-    return DbDiscussion.get(DbDiscussion.id == id).__data__
+    data = DbDiscussion.get(DbDiscussion.id == id).__data__
+    data.__setitem__("liked_by", [])
+    data.__setitem__("comments_by", [])
+    return data
 
 
 def create_discussion(
