@@ -4,7 +4,7 @@ from fastapi import APIRouter, Form, HTTPException
 router = APIRouter()
 
 
-@router.get("/{topic}/threads/{discussion_id}/comments",
+@router.post("/{topic}/threads/{discussion_id}/comments",
             summary="Creates a comment item",
             description="Adds a comment item to the db",
             tags=["discussions/comments"])
