@@ -1,0 +1,1306 @@
+{
+    "Theme_Names": [
+        {
+            "THEMENAME": "MCE KPE Speed Camera",
+            "QUERYNAME": "mce_kpe_speed_camera",
+            "ICON": "icon_enforcementCam_20-01.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Mobile Speed Cameras",
+            "QUERYNAME": "spf_msc",
+            "ICON": "SpeedCam_logo.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Liquor Control Zone(s) proclaimed under Liquor Control (Supply and Consumption) Act 2015",
+            "QUERYNAME": "liquor_control_zones",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Singapore Police Force - 32nd ASEAN Summit Istana Special Zone",
+            "QUERYNAME": "as_istana_core",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Singapore Police Force - 32nd ASEAN Summit Istana Special Event Area",
+            "QUERYNAME": "as_istana_buffer",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Inland Ash Scattering Gardens",
+            "QUERYNAME": "ias",
+            "ICON": "circle.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dengue (Cases) - North West",
+            "QUERYNAME": "denguecase_northwest_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "CET Centres",
+            "QUERYNAME": "cetcentres",
+            "ICON": "WSQ.jpg",
+            "CATEGORY": "Education",
+            "THEME_OWNER": "SINGAPORE WORKFORCE DEVELOPMENT AGENCY"
+        },
+        {
+            "THEMENAME": "HDB Branches",
+            "QUERYNAME": "hdb_branches",
+            "ICON": "M0906.png",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "Licensed premises for petroleum products",
+            "QUERYNAME": "customs_petroleum_product",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "SINGAPORE CUSTOMS"
+        },
+        {
+            "THEMENAME": "NParks BBQ Pits",
+            "QUERYNAME": "nparks_bbq_pit",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "PA Headquarters",
+            "QUERYNAME": "paheadquarters",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Breast Screening Centre",
+            "QUERYNAME": "breastscreen",
+            "ICON": "breastscreen.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Eldercare Services",
+            "QUERYNAME": "eldercare",
+            "ICON": "onemap-fc-eldercare.png",
+            "CATEGORY": "Family",
+            "THEME_OWNER": "MINISTRY OF HEALTH"
+        },
+        {
+            "THEMENAME": "Fire Posts",
+            "QUERYNAME": "firepost",
+            "ICON": "FP.png",
+            "CATEGORY": "Emergency Preparedness",
+            "THEME_OWNER": "SINGAPORE CIVIL DEFENCE FORCE"
+        },
+        {
+            "THEMENAME": "Funeral Parlours",
+            "QUERYNAME": "funeralparlours",
+            "ICON": "circle.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Water Ventures",
+            "QUERYNAME": "waterventure",
+            "ICON": "Water-Venture.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Estate Upgrading Programme (EUP) Works for OSP",
+            "QUERYNAME": "bca_estate_upg_prog_osp",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "BUILDING AND CONSTRUCTION AUTHORITY"
+        },
+        {
+            "THEMENAME": "JTC Business Park Land",
+            "QUERYNAME": "jtc_luse_bp_bpw",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "JTC CORPORATION"
+        },
+        {
+            "THEMENAME": "SAFRA Centres",
+            "QUERYNAME": "hsgb_safra",
+            "ICON": "SAFRA.png",
+            "CATEGORY": "National Service",
+            "THEME_OWNER": "MINISTRY OF DEFENCE"
+        },
+        {
+            "THEMENAME": "Hawker Centres",
+            "QUERYNAME": "hawkercentre",
+            "ICON": "HC icons_Opt 8.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Hotels",
+            "QUERYNAME": "hotels",
+            "ICON": "hotel.gif",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "HOTELS LICENSING BOARD"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Establishments (2018)",
+            "QUERYNAME": "spf_establishments_2018",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "ABC Waters Sites",
+            "QUERYNAME": "abcwaterssites",
+            "ICON": "abclogo_onemap.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "Road Speed Limit",
+            "QUERYNAME": "roadattributeline_speedlimits",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Healthier Hawker Centres",
+            "QUERYNAME": "healthier_hawker_centres",
+            "ICON": "HCS logo.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": ""
+        },
+        {
+            "THEMENAME": "LTA & Town Council Cycling Paths",
+            "QUERYNAME": "lta_cycling_paths",
+            "ICON": "cycling.jpg",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": ""
+        },
+        {
+            "THEMENAME": "IP Service Providers",
+            "QUERYNAME": "ip_serviceproviders",
+            "ICON": "ipServiceLogo.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "INTELLECTUAL PROPERTY OFFICE OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "PA Holiday Facilities",
+            "QUERYNAME": "otherfacilities",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "NEA Offices",
+            "QUERYNAME": "neaoffices",
+            "ICON": "ecoa20.jpg",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "SCDF HQs and Training Establishments",
+            "QUERYNAME": "scdfhq",
+            "ICON": "SCDF.jpg",
+            "CATEGORY": "Emergency Preparedness",
+            "THEME_OWNER": "SINGAPORE CIVIL DEFENCE FORCE"
+        },
+        {
+            "THEMENAME": "Cleaning Sectors",
+            "QUERYNAME": "cleansing_outsourced",
+            "ICON": "cleansing sector.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Disability Services",
+            "QUERYNAME": "disability",
+            "ICON": "onemap-fc-disability.png",
+            "CATEGORY": "Family",
+            "THEME_OWNER": "MINISTRY OF SOCIAL AND FAMILY DEVELOPMENT"
+        },
+        {
+            "THEMENAME": "Fitness and Conditioning Centres (FCC)",
+            "QUERYNAME": "hsgb_fcc",
+            "ICON": "HSGB_FCC.png",
+            "CATEGORY": "National Service",
+            "THEME_OWNER": "MINISTRY OF DEFENCE"
+        },
+        {
+            "THEMENAME": "Fire Stations",
+            "QUERYNAME": "firestation",
+            "ICON": "FS.PNG",
+            "CATEGORY": "Emergency Preparedness",
+            "THEME_OWNER": "SINGAPORE CIVIL DEFENCE FORCE"
+        },
+        {
+            "THEMENAME": "Quit Centres",
+            "QUERYNAME": "quitcentres",
+            "ICON": "quitcentres.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Social Service Offices",
+            "QUERYNAME": "sso",
+            "ICON": "sso_20_px_by_20_px.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "MINISTRY OF SOCIAL AND FAMILY DEVELOPMENT"
+        },
+        {
+            "THEMENAME": "Licensed Premises for Liquors & Tabacco Products",
+            "QUERYNAME": "customs_tabacco_product",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "SINGAPORE CUSTOMS"
+        },
+        {
+            "THEMENAME": "NAPFA Test Centre",
+            "QUERYNAME": "hsgb_napfa",
+            "ICON": "HSGB_FCC.png",
+            "CATEGORY": "National Service",
+            "THEME_OWNER": "MINISTRY OF DEFENCE"
+        },
+        {
+            "THEMENAME": "SportSG Sport Facilities",
+            "QUERYNAME": "sportsg_sport_facilities",
+            "ICON": "RedDot(20x20px)clear.png",
+            "CATEGORY": "Sports",
+            "THEME_OWNER": "SPORT SINGAPORE"
+        },
+        {
+            "THEMENAME": "TradeNet Service Centres & Certified Vendors",
+            "QUERYNAME": "customs_tradenet_service",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "SINGAPORE CUSTOMS"
+        },
+        {
+            "THEMENAME": "Tree Conservation Area",
+            "QUERYNAME": "tree_conservation_area",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "URA Project (PUBLIC)",
+            "QUERYNAME": "ura_project_public_pl",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "URBAN REDEVELOPMENT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Liquor Control Zone under Public Order (Additional Temporary Measures) Act 2014",
+            "QUERYNAME": "liquor_control_zone",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Monuments",
+            "QUERYNAME": "monuments",
+            "ICON": "heritage.gif",
+            "CATEGORY": "Culture",
+            "THEME_OWNER": "NATIONAL HERITAGE BOARD"
+        },
+        {
+            "THEMENAME": "Museums",
+            "QUERYNAME": "museum",
+            "ICON": "mr.gif",
+            "CATEGORY": "Culture",
+            "THEME_OWNER": "NATIONAL HERITAGE BOARD"
+        },
+        {
+            "THEMENAME": "Locations of Remittance",
+            "QUERYNAME": "remittance",
+            "ICON": "onemap_Remittance_20.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "MONETARY AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "Areas within Restricted Areas",
+            "QUERYNAME": "restricted_areaspoly",
+            "ICON": "CAAS.JPG",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "Silver Infocomm",
+            "QUERYNAME": "silverinfocomm",
+            "ICON": "silverInfocomm.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "INFOCOMM MEDIA DEVELOPMENT AUTHORITY"
+        },
+        {
+            "THEMENAME": "LTA Bicycle Rack",
+            "QUERYNAME": "bicyclerack",
+            "ICON": "Bikepark.jpg",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Singapore Police Force - 32nd ASEAN Summit Shangri-La Hotel Special Zone",
+            "QUERYNAME": "as_shangrila_core",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Singapore Police Force - 32nd ASEAN Summit Shangri-La Hotel Special Event Area",
+            "QUERYNAME": "as_shangrila_buffer",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Aedes Mosquito Breeding Habitats - South East",
+            "QUERYNAME": "breedinghabitat_southeast_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Aedes Mosquito Breeding Habitats - Central",
+            "QUERYNAME": "breedinghabitat_central_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Civil Defence Public Shelters",
+            "QUERYNAME": "civildefencepublicshelters",
+            "ICON": "Onemap.png",
+            "CATEGORY": "Emergency Preparedness",
+            "THEME_OWNER": "SINGAPORE CIVIL DEFENCE FORCE"
+        },
+        {
+            "THEMENAME": "Under-Construction Park Connectors",
+            "QUERYNAME": "nparks_uc_pc",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Electoral Boundary 2006",
+            "QUERYNAME": "ed_bdy_2009",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "ELECTIONS DEPARTMENT"
+        },
+        {
+            "THEMENAME": "Electoral Boundary 2011",
+            "QUERYNAME": "tb_msis_gaz_ed",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "ELECTIONS DEPARTMENT"
+        },
+        {
+            "THEMENAME": "Singapore Coastal Habitats Map from High Resolution Satellite Imagery (2010/2011)",
+            "QUERYNAME": "singapore_cmhabitats_20102011",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Certificate Grading Info of Licensed Eating Establishments",
+            "QUERYNAME": "track_record_ils_feb18",
+            "ICON": "icon.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "SINGAPORE FOOD AGENCY"
+        },
+        {
+            "THEMENAME": "CAAS Zones for Solar PV Consultation",
+            "QUERYNAME": "solarpv_zones",
+            "ICON": "CAAS logo.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "Active Cemeteries",
+            "QUERYNAME": "activecemeteries",
+            "ICON": "circle.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Crematoria",
+            "QUERYNAME": "crematoria",
+            "ICON": "circle.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dedicated Columbaria",
+            "QUERYNAME": "columbaria",
+            "ICON": "circle.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "RecycleNSave Reverse Vending Machines (RVMs) Locations",
+            "QUERYNAME": "rvm",
+            "ICON": "RVMresized2.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Strengthening Families Programme",
+            "QUERYNAME": "strengtheningfam",
+            "ICON": "1map.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "MINISTRY OF SOCIAL AND FAMILY DEVELOPMENT"
+        },
+        {
+            "THEMENAME": "AXS QuickBill",
+            "QUERYNAME": "axs_quickbill",
+            "ICON": "redQB.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": ""
+        },
+        {
+            "THEMENAME": "Skyrise Greenery",
+            "QUERYNAME": "skyrisegreenery",
+            "ICON": "circle.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": ""
+        },
+        {
+            "THEMENAME": "SportSG Sport Facilities",
+            "QUERYNAME": "ssc_sports_facilities",
+            "ICON": "RedDot(20x20px)clear.png",
+            "CATEGORY": "Sports",
+            "THEME_OWNER": ""
+        },
+        {
+            "THEMENAME": "Tourist Attractions",
+            "QUERYNAME": "tourism",
+            "ICON": "tourist_spot.gif",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "SINGAPORE TOURISM BOARD"
+        },
+        {
+            "THEMENAME": "Waste Disposal Site",
+            "QUERYNAME": "wastedisposalsite",
+            "ICON": "disposala20.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Wireless HotSpots",
+            "QUERYNAME": "wireless_hotspots",
+            "ICON": "wireless.gif",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "INFOCOMM MEDIA DEVELOPMENT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Community Mediation",
+            "QUERYNAME": "commmediationctr",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "MINISTRY OF LAW"
+        },
+        {
+            "THEMENAME": "Drainage Construction",
+            "QUERYNAME": "drainageconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "Licensed Premises for Motor Vehicles",
+            "QUERYNAME": "customs_motor_vehicle",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "SINGAPORE CUSTOMS"
+        },
+        {
+            "THEMENAME": "URA Parking Lot",
+            "QUERYNAME": "ura_parking_lot",
+            "ICON": "ParkingLot.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "URBAN REDEVELOPMENT AUTHORITY"
+        },
+        {
+            "THEMENAME": "CPF Service Centres",
+            "QUERYNAME": "cpfb_location",
+            "ICON": "logocpf.png",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "CENTRAL PROVIDENT FUND BOARD"
+        },
+        {
+            "THEMENAME": "After Death Facilities",
+            "QUERYNAME": "afterdeathfacilities",
+            "ICON": "coffina20.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "CareersConnect",
+            "QUERYNAME": "wdaservicepoints",
+            "ICON": "WSQ.jpg",
+            "CATEGORY": "Employment",
+            "THEME_OWNER": "SINGAPORE WORKFORCE DEVELOPMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Bloodbank locations",
+            "QUERYNAME": "blood_bank",
+            "ICON": "iconbloodbank_new.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH SCIENCES AUTHORITY"
+        },
+        {
+            "THEMENAME": "Healthier Caterers",
+            "QUERYNAME": "healthiercaterers",
+            "ICON": "HCS.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Healthier Eateries",
+            "QUERYNAME": "healthierdining",
+            "ICON": "HealthierDining.PNG",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Waste Treatment",
+            "QUERYNAME": "wastetreatment",
+            "ICON": "skull2a20.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Maxwell Chambers F&B map",
+            "QUERYNAME": "maxwell_fnb_map",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "MINISTRY OF LAW"
+        },
+        {
+            "THEMENAME": "Private Education Institutions",
+            "QUERYNAME": "cpe_pei_premises",
+            "ICON": "pink.jpg",
+            "CATEGORY": "Education",
+            "THEME_OWNER": "SKILLSFUTURE SINGAPORE"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Fixed Speed Cameras",
+            "QUERYNAME": "spf_fsc",
+            "ICON": "SpeedCam_logo.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "SewerageConstruction",
+            "QUERYNAME": "sewerageconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "Community Devt Councils",
+            "QUERYNAME": "cdcouncils",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Areas within Danger Areas",
+            "QUERYNAME": "danger_areas",
+            "ICON": "CAAS logo.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "Infocomm Accessibility",
+            "QUERYNAME": "infocommaccess",
+            "ICON": "ico_mouse.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "INFOCOMM MEDIA DEVELOPMENT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Other PA Networks",
+            "QUERYNAME": "otherpanetworks",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Areas within Prohibited Areas",
+            "QUERYNAME": "prohibited_areas",
+            "ICON": "CAAS logo.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "WaterActivities@SG",
+            "QUERYNAME": "aquaticsg",
+            "ICON": "aquaticsg.png",
+            "CATEGORY": "Sports",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Stables",
+            "QUERYNAME": "stables",
+            "ICON": "stableslogo.PNG",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Designated Smoking Areas",
+            "QUERYNAME": "dsa",
+            "ICON": "icon.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Certificate Grading Info of Licensed Eating Establishments",
+            "QUERYNAME": "track_record_ils_feb18",
+            "ICON": "icon.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Eating Establishments",
+            "QUERYNAME": "eating_establishments",
+            "ICON": "eatingestablogo.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "SINGAPORE FOOD AGENCY"
+        },
+        {
+            "THEMENAME": "HDB Existing Building",
+            "QUERYNAME": "hdb_active_blk_p",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "DUS Schools Sports Facilities",
+            "QUERYNAME": "dus_school_sports_facilities",
+            "ICON": "RedDot(20x20px)clear.png",
+            "CATEGORY": "Sports",
+            "THEME_OWNER": "SPORT SINGAPORE"
+        },
+        {
+            "THEMENAME": "ISP Clinics",
+            "QUERYNAME": "moh_isp_clinics",
+            "ICON": "OM2_MOHicon_ISPClinic_20px.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "MINISTRY OF HEALTH"
+        },
+        {
+            "THEMENAME": "Heritage Trees",
+            "QUERYNAME": "heritagetrees",
+            "ICON": "tree_icon_supercompressed.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "HDB Neighbourhood Renewal Programme Proposed and Under-Construction (NRP)",
+            "QUERYNAME": "hdbnrpunderconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "NParks Activity Area",
+            "QUERYNAME": "nparks_activity_area",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Family Services",
+            "QUERYNAME": "family",
+            "ICON": "onemap-fc-family.png",
+            "CATEGORY": "Family",
+            "THEME_OWNER": "MINISTRY OF SOCIAL AND FAMILY DEVELOPMENT"
+        },
+        {
+            "THEMENAME": "Gyms@SG",
+            "QUERYNAME": "exercisefacilities",
+            "ICON": "Fit@SG.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Student Care Services",
+            "QUERYNAME": "studentcare",
+            "ICON": "onemap-fc-studentcare.png",
+            "CATEGORY": "Family",
+            "THEME_OWNER": "MINISTRY OF SOCIAL AND FAMILY DEVELOPMENT"
+        },
+        {
+            "THEMENAME": "LTA Road Camera",
+            "QUERYNAME": "lta_road_enforcement_camera",
+            "ICON": "icon_enforcementCam_20-01.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "PUB Water Level Sensors",
+            "QUERYNAME": "pub_waterlevelsensors",
+            "ICON": "Capture.PNG",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "Constituency Offices",
+            "QUERYNAME": "constituencyoffices",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Locations of Money Changer",
+            "QUERYNAME": "moneychanger",
+            "ICON": "onemap_MoneyExchange_20.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "MONETARY AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "Protected Area under Section 7 Air Navigation Act",
+            "QUERYNAME": "mha_uav_2015",
+            "ICON": "MHA-Logo 20-20.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "MINISTRY OF HOME AFFAIRS"
+        },
+        {
+            "THEMENAME": "SportsFields@SG",
+            "QUERYNAME": "playsg",
+            "ICON": "playsg.png",
+            "CATEGORY": "Sports",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Under-Construction Parks",
+            "QUERYNAME": "nparks_uc_parks",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "E-waste Recycling_NEW",
+            "QUERYNAME": "ewaste_new",
+            "ICON": "ewaste.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Under-Construction Park Facilities",
+            "QUERYNAME": "underconstruction_facilities",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "HDB Car Park Information",
+            "QUERYNAME": "hdb_car_park_information",
+            "ICON": "map-carpark.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "Industrial Government Land Sales - Sites",
+            "QUERYNAME": "igls_sites",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "JTC CORPORATION"
+        },
+        {
+            "THEMENAME": "ABC Waters Construction",
+            "QUERYNAME": "abcwatersconstruction",
+            "ICON": "tender-map-abc.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "Cervical Screening Centre",
+            "QUERYNAME": "cervicalscreen",
+            "ICON": "CSS.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "Retail pharmacy locations",
+            "QUERYNAME": "registered_pharmacy",
+            "ICON": "Pharmacies_new.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH SCIENCES AUTHORITY"
+        },
+        {
+            "THEMENAME": "NParks Skyrise Greenery",
+            "QUERYNAME": "skyrise_greenery",
+            "ICON": "npark.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Community Clubs",
+            "QUERYNAME": "communityclubs",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Heritage Road Green Buffers",
+            "QUERYNAME": "heritageroadgreenbuffer",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "JTC Temporary Occupation License",
+            "QUERYNAME": "jtc_tol",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "JTC CORPORATION"
+        },
+        {
+            "THEMENAME": "LTA Rail Project Under Construction (Unclassified)",
+            "QUERYNAME": "ltarailprj_uc_unclass",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "PCN Access Points",
+            "QUERYNAME": "pcn_access_points",
+            "ICON": "icon36x36pcn.jpg",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "PUB CCTV",
+            "QUERYNAME": "pub_cctv_public",
+            "ICON": "cctv.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "WaterSupplyConstruction",
+            "QUERYNAME": "watersupplyconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "PUBLIC UTILITIES BOARD"
+        },
+        {
+            "THEMENAME": "Community in Bloom (CIB)",
+            "QUERYNAME": "cib_gardens",
+            "ICON": "Resized-BHFPC.jpg",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Parks",
+            "QUERYNAME": "nationalparks",
+            "ICON": "parks.gif",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Park Connector Loop",
+            "QUERYNAME": "park_connector_loop",
+            "ICON": "image.jpg",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Pre-Schools Location",
+            "QUERYNAME": "preschools_location",
+            "ICON": "location-icon.png",
+            "CATEGORY": "Education",
+            "THEME_OWNER": "EARLY CHILDHOOD DEVELOPMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Licensed Premises for Zero GST Goods",
+            "QUERYNAME": "customs_zero_gst_goods",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "SINGAPORE CUSTOMS"
+        },
+        {
+            "THEMENAME": "Supermarkets",
+            "QUERYNAME": "supermarkets",
+            "ICON": "supermarketlogo.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "SINGAPORE FOOD AGENCY"
+        },
+        {
+            "THEMENAME": "Aedes Mosquito Breeding Habitats - North West",
+            "QUERYNAME": "breedinghabitat_northwest_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Electoral Boundary 2015",
+            "QUERYNAME": "eld2015",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "ELECTIONS DEPARTMENT"
+        },
+        {
+            "THEMENAME": "No Smoking Zones",
+            "QUERYNAME": "nsz",
+            "ICON": "icon.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "HDB Cycling Paths Under-Construction",
+            "QUERYNAME": "hdbcyclingunderconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "Community Led Areas",
+            "QUERYNAME": "community_led_areas",
+            "ICON": "CAAS logo.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "Open Use Areas",
+            "QUERYNAME": "open_use_areas",
+            "ICON": "CAAS logo.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "NParks Lamp Post",
+            "QUERYNAME": "nparks_lamppost",
+            "ICON": "untitled2.png",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "2nd Hand Goods Collection Points",
+            "QUERYNAME": "secondhandcollecn",
+            "ICON": "2hand.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Areas within 5km of aerodromes",
+            "QUERYNAME": "boundary_5km",
+            "ICON": "CAAS logo.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "CIVIL AVIATION AUTHORITY OF SINGAPORE"
+        },
+        {
+            "THEMENAME": "NParks Parks and Nature Reserves",
+            "QUERYNAME": "nparks_parks",
+            "ICON": "image.gif",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Establishments",
+            "QUERYNAME": "spf_establishments",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "E-waste Recycling",
+            "QUERYNAME": "ewaste",
+            "ICON": "ewaste.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Parks@SG",
+            "QUERYNAME": "relaxsg",
+            "ICON": "relaxsg.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "HEALTH PROMOTION BOARD"
+        },
+        {
+            "THEMENAME": "HDB Public Housing Building Under-Construction",
+            "QUERYNAME": "hdbbuildingunderconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "HDB Lift Upgrading Programme Proposed and Under-Construction (LUP)",
+            "QUERYNAME": "hdbluppropunderconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "IPPT In Your Community",
+            "QUERYNAME": "hsgb_ippt",
+            "ICON": "HSGB_FCC.png",
+            "CATEGORY": "National Service",
+            "THEME_OWNER": "MINISTRY OF DEFENCE"
+        },
+        {
+            "THEMENAME": "JTC Estate Name Boundary",
+            "QUERYNAME": "jtc_estate_name",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "JTC CORPORATION"
+        },
+        {
+            "THEMENAME": "LTA Parking Standards Zone",
+            "QUERYNAME": "parkingstandardszone",
+            "ICON": "psz-LOGO_20by20.png",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Red Light Cameras",
+            "QUERYNAME": "spf_rlc",
+            "ICON": "SpeedCam_logo.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Police Speed Laser Cameras",
+            "QUERYNAME": "spf_pslc",
+            "ICON": "SpeedCam_logo.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Singapore Police Force Digital Traffic Red Light Cameras",
+            "QUERYNAME": "spf_dtrls",
+            "ICON": "DTRLS--logo.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Community Use Sites",
+            "QUERYNAME": "comm_use_sites",
+            "ICON": "recreation_sla.gif",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "SINGAPORE LAND AUTHORITY"
+        },
+        {
+            "THEMENAME": "Historic Sites",
+            "QUERYNAME": "historicsites",
+            "ICON": "onemapicon.gif",
+            "CATEGORY": "Culture",
+            "THEME_OWNER": "NATIONAL HERITAGE BOARD"
+        },
+        {
+            "THEMENAME": "Kindergartens",
+            "QUERYNAME": "kindergartens",
+            "ICON": "school.gif",
+            "CATEGORY": "Education",
+            "THEME_OWNER": "EARLY CHILDHOOD DEVELOPMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Libraries",
+            "QUERYNAME": "libraries",
+            "ICON": "library.gif",
+            "CATEGORY": "Culture",
+            "THEME_OWNER": "NATIONAL LIBRARY BOARD"
+        },
+        {
+            "THEMENAME": "Residents' Committee / Residents' Network Centre",
+            "QUERYNAME": "residentscommittee",
+            "ICON": "RC_20.gif",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "Aedes Mosquito Breeding Habitats - South West",
+            "QUERYNAME": "breedinghabitat_southwest_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Aedes Mosquito Breeding Habitats - North East",
+            "QUERYNAME": "breedinghabitat_northeast_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dementia Friendly Go-To-Points (GTPs)",
+            "QUERYNAME": "dfc_gtp",
+            "ICON": "Go To Point Logo 19x18.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "MINISTRY OF HEALTH"
+        },
+        {
+            "THEMENAME": "Hawker Centres_New",
+            "QUERYNAME": "hawkercentre_new",
+            "ICON": "ONEMAPicon.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dengue (Cases) - South East",
+            "QUERYNAME": "denguecase_southeast_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dengue (Cases) - South West",
+            "QUERYNAME": "denguecase_southwest_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Community Club / PAssion WaVe Outlet",
+            "QUERYNAME": "communityclubpassionwave",
+            "ICON": "PA.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "PEOPLE'S ASSOCIATION"
+        },
+        {
+            "THEMENAME": "NParks Buildings",
+            "QUERYNAME": "nparks_building",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Park Facilities",
+            "QUERYNAME": "nparks_facilities",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "NParks Car Park Lots",
+            "QUERYNAME": "nparks_carpark_lots",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Singapore Police Force NPC Boundary",
+            "QUERYNAME": "npc_boundary",
+            "ICON": "Crest_20x20.jpg",
+            "CATEGORY": "Government Offices",
+            "THEME_OWNER": "SINGAPORE POLICE FORCE"
+        },
+        {
+            "THEMENAME": "Voluntary Welfare Orgs",
+            "QUERYNAME": "voluntarywelfareorgs",
+            "ICON": "onemap-fc-vwo.png",
+            "CATEGORY": "Family",
+            "THEME_OWNER": "MINISTRY OF SOCIAL AND FAMILY DEVELOPMENT"
+        },
+        {
+            "THEMENAME": "Child Care Services",
+            "QUERYNAME": "childcare",
+            "ICON": "onemap-fc-childcare.png",
+            "CATEGORY": "Family",
+            "THEME_OWNER": "EARLY CHILDHOOD DEVELOPMENT AGENCY"
+        },
+        {
+            "THEMENAME": "HDB Roads Under Construction",
+            "QUERYNAME": "hdbroadsunderconstruction",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "HOUSING AND DEVELOPMENT BOARD"
+        },
+        {
+            "THEMENAME": "NPARKS Play/Fitness Equipment",
+            "QUERYNAME": "nparks_play_fitness_eq",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Cycling Path Network",
+            "QUERYNAME": "cyclingpath",
+            "ICON": "2016-03-31-CYCLING LOGO-Blue.jpg",
+            "CATEGORY": "Recreation",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "Friendly Buildings",
+            "QUERYNAME": "bfabuildings",
+            "ICON": "ARS logo20.jpg",
+            "CATEGORY": "Community",
+            "THEME_OWNER": "BUILDING AND CONSTRUCTION AUTHORITY"
+        },
+        {
+            "THEMENAME": "Public Access AEDs",
+            "QUERYNAME": "aed_locations",
+            "ICON": "aedlogo.png",
+            "CATEGORY": "Emergency Preparedness",
+            "THEME_OWNER": "SINGAPORE CIVIL DEFENCE FORCE"
+        },
+        {
+            "THEMENAME": "LTA Road Construction Project (Unclassified)",
+            "QUERYNAME": "lta_rdproj_unclass",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "LAND TRANSPORT AUTHORITY"
+        },
+        {
+            "THEMENAME": "NParks Tracks",
+            "QUERYNAME": "nparks_tracks",
+            "ICON": "null",
+            "CATEGORY": "null",
+            "THEME_OWNER": "NATIONAL PARKS BOARD"
+        },
+        {
+            "THEMENAME": "Dengue (Cases) - North East",
+            "QUERYNAME": "denguecase_northeast_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dengue Clusters",
+            "QUERYNAME": "dengue_cluster",
+            "ICON": "mosquitoa20.jpg",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Dengue (Cases) - Central",
+            "QUERYNAME": "denguecase_central_area",
+            "ICON": "Picture1.png",
+            "CATEGORY": "Health",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "Areas with High Aedes Population",
+            "QUERYNAME": "areas_hap",
+            "ICON": "mosquito.png",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "NATIONAL ENVIRONMENT AGENCY"
+        },
+        {
+            "THEMENAME": "SportSG DUS Sport Facilities",
+            "QUERYNAME": "sportsg_dus_sport_facilities",
+            "ICON": "20170810_DUS_ICON.png",
+            "CATEGORY": "Sports",
+            "THEME_OWNER": "SPORT SINGAPORE"
+        },
+        {
+            "THEMENAME": "Green Mark Buildings",
+            "QUERYNAME": "greenbuilding",
+            "ICON": "gml_j20.jpg",
+            "CATEGORY": "Environment",
+            "THEME_OWNER": "BUILDING AND CONSTRUCTION AUTHORITY"
+        }
+    ]
+}
