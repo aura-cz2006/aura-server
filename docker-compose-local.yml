@@ -1,9 +1,12 @@
 version: '3.3'
 services:
     api-server:
+        # network_mode: "host"
         build: .
         ports:
-            - '80:8000'
+            - '8000:8000'
+        volumes:
+            - './secrets:/code/secrets'
     db:
         image: mysql:5.7
         restart: always
@@ -23,13 +26,10 @@ services:
             - '3306'
         # Where our data will be persisted
         volumes:
-            - my-db:/var/lib/mysql
+            - './my-db:/var/lib/mysql'
 
     adminer:
         image: adminer
         restart: always
         ports:
             - 8080:8080
-
-volumes:
-    my-db:

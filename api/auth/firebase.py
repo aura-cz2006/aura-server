@@ -3,10 +3,12 @@ import os
 
 from fastapi_cloudauth.firebase import FirebaseCurrentUser, FirebaseClaims
 
+creds_path = os.path.join(
+    os.getcwd(), 'secrets/serviceAccountKey.json')
 
 cred = firebase_admin.credentials.Certificate(
-    os.path.join(
-        os.getcwd(), 'secrets/serviceAccountKey.json'))
+    creds_path)
+
 default_app = firebase_admin.initialize_app(cred)
 
 firebase_app = default_app

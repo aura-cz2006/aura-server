@@ -7,9 +7,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = main.app
 
 print("adding production middlware")
-app.add_middleware(
-    TrustedHostMiddleware, allowed_hosts=["aura-app.xyz", "*.aura-app.xyz"]
-)
+# app.add_middleware(
+#     TrustedHostMiddleware, allowed_hosts=["aura-app.xyz", "*.aura-app.xyz"]
+# )
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 app.add_middleware(
     CORSMiddleware,
