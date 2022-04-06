@@ -1,9 +1,11 @@
-from urllib import response
+import os
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
 import uvicorn
 import firebase_admin.auth as auth
+from fastapi_cloudauth.firebase import FirebaseCurrentUser, FirebaseClaims
+
 
 from .auth import firebase
 from .db.database import conn as db_conn
@@ -17,6 +19,10 @@ from fastapi.staticfiles import StaticFiles
 
 
 app = FastAPI()
+
+# get_current_user = FirebaseCurrentUser(
+#     project_id=os.environ["PROJECT_ID"]
+# )
 
 
 @app.on_event("startup")
@@ -33,24 +39,24 @@ async def shutdown():
         db_conn.close()
 
 
-@app.middleware("http")
-async def add_firebase_auth_middleware(request: Request, call_next):
+# @app.middleware("http")
+# async def add_firebase_auth_middleware(request: Request, call_next):
 
-    response = await call_next(request)
-    try:
+#     response = await call_next(request)
+#     try:
 
-        authentication_header_value = request.headers.get("authorization")
-        id_token = authentication_header_value.split(" ")[1]
+#         authentication_header_value = request.headers.get("authorization")
+#         id_token = authentication_header_value.split(" ")[1]
 
-        print(id_token)
+#         print(id_token)
 
-        path = request.url.path
-        print(path)
+#         path = request.url.path
+#         print(path)
 
-        return response
+#         return response
 
-    except:
-        return JSONResponse(status_code=401, content=jsonable_encoder({"error": "You are not authorized"}))
+#     except:
+#         return JSONResponse(status_code=401, content=jsonable_encoder({"error": "You are not authorized"}))
 
 
 # news
