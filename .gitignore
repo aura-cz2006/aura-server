@@ -2,3 +2,5 @@ __pycache__
 /venv/
 /.idea/
 db_data
+secrets
+my-db

@@ -6,16 +6,30 @@ services:
         ports:
             - '80:8000'
         volumes:
-            - './ssl:/code/ssl'
+            - './secrets:/code/secrets'
     db:
-        image: "mcr.microsoft.com/mssql/server"
-        ports:
-            - '1433:1433' # todo: don't expose this to the host!!!
-        volumes:
-            - './db_data:/var/opt/mssql'
+        image: mysql:5.7
+        restart: always
         environment:
-            SA_PASSWORD: "Your_password123" # change this
-            ACCEPT_EULA: "Y"
+            MYSQL_DATABASE: 'db'
+            # So you don't have to use root, but you can if you like
+            MYSQL_USER: 'user'
+            # You can use whatever password you like
+            MYSQL_PASSWORD: 'password'
+            # Password for root access
+            MYSQL_ROOT_PASSWORD: 'password'
+        ports:
+            # <Port exposed> : < MySQL Port running inside container>
+            - '3306:3306'
+        expose:
+            # Opens port 3306 on the container
+            - '3306'
+        # Where our data will be persisted
+        volumes:
+            - './my-db:/var/lib/mysql'
 
-volumes:
-  db_data:
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080

@@ -1,4 +1,11 @@
+
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
+from .auth.firebase import creds_path
+from .auth import firebase
+from .db.database import conn as db_conn
+from .routers.login import post as login_post
 from fastapi.staticfiles import StaticFiles
 from .routers.news import get as news_get
 from .routers.discussions import get as discussions_get, post as discussions_post, patch as discussions_patch, delete as discussions_delete
@@ -8,6 +15,37 @@ from .routers.meetups.comments import post as meetups_comments_post, delete as m
 from .routers.proxy import taxis as proxy_taxis, buses as proxy_buses, amenities as proxy_amenities
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+print(f"secrets path: {creds_path}")
+
+
+@app.on_event("startup")
+async def startup():
+    firebase_app = firebase.firebase_app  # init firebase
+    if db_conn.is_closed():
+        db_conn.connect()
+
+
+@app.on_event("shutdown")
+async def shutdown():
+    print("Closing...")
+    if not db_conn.is_closed():
+        db_conn.close()
+
+
+# news
+app.include_router(
+    login_post.router,
+    prefix="/login"
+)
 
 # news
 app.include_router(
