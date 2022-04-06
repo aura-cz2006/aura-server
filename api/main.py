@@ -1,5 +1,12 @@
-from fastapi import FastAPI
+from urllib import response
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
+from fastapi.encoders import jsonable_encoder
 import uvicorn
+import firebase_admin.auth as auth
+
+from .auth import firebase
+from .db.database import conn as db_conn
 from .routers.login import post as login_post
 from .routers.news import get as news_get
 from .routers.discussions import get as discussions_get, post as discussions_post, patch as discussions_patch, delete as discussions_delete
@@ -10,6 +17,40 @@ from fastapi.staticfiles import StaticFiles
 
 
 app = FastAPI()
+
+
+@app.on_event("startup")
+async def startup():
+    firebase_app = firebase.firebase_app  # init firebase
+    if db_conn.is_closed():
+        db_conn.connect()
+
+
+@app.on_event("shutdown")
+async def shutdown():
+    print("Closing...")
+    if not db_conn.is_closed():
+        db_conn.close()
+
+
+@app.middleware("http")
+async def add_firebase_auth_middleware(request: Request, call_next):
+
+    response = await call_next(request)
+    try:
+
+        authentication_header_value = request.headers.get("authorization")
+        id_token = authentication_header_value.split(" ")[1]
+
+        print(id_token)
+
+        path = request.url.path
+        print(path)
+
+        return response
+
+    except:
+        return JSONResponse(status_code=401, content=jsonable_encoder({"error": "You are not authorized"}))
 
 
 # news
