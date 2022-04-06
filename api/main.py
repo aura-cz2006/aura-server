@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+import uvicorn
+from .routers.login import post as login_post
 from .routers.news import get as news_get
 from .routers.discussions import get as discussions_get, post as discussions_post, patch as discussions_patch, delete as discussions_delete
 from .routers.discussions.comments import post as discussions_comments_post, delete as discussions_comments_delete
@@ -8,6 +10,13 @@ from fastapi.staticfiles import StaticFiles
 
 
 app = FastAPI()
+
+
+# news
+app.include_router(
+    login_post.router,
+    prefix="/login"
+)
 
 # news
 app.include_router(
