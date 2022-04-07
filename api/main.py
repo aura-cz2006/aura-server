@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
@@ -14,7 +13,15 @@ from .routers.meetups import get as meetups_get, post as meetups_post, patch as 
 from .routers.meetups.comments import post as meetups_comments_post, delete as meetups_comments_delete
 from .routers.proxy import taxis as proxy_taxis, buses as proxy_buses, amenities as proxy_amenities
 
-app = FastAPI()
+description = """
+Aura API is designed to be consumed by the Aura Mobile App
+
+#### Authorization and Authentication
+
+Get a firebase jwt token from a test device
+"""
+
+app = FastAPI(title="Aura API", description=description)
 
 app.add_middleware(
     CORSMiddleware,
