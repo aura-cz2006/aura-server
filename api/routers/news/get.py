@@ -12,7 +12,7 @@ router = APIRouter()
 # todo: integrate db here
 # for now we're using sample data
 news_data = sample_news_data
-print(news_data)
+
 
 
 @router.get("/",
