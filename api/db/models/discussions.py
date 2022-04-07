@@ -24,7 +24,10 @@ def get_discussions():
     for discussion in query:
         data = discussion.__data__
         data.__setitem__("liked_by", [])
-        data.__setitem__("comments_by", [])
+
+        from .discussion_comments import get_comments_of_single_discussion
+        comments = get_comments_of_single_discussion(discussion.id)
+        data.__setitem__("comments", comments)
         discussions.append(discussion.__data__)
 
     return discussions

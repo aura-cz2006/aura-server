@@ -3,6 +3,7 @@ from fastapi import APIRouter, Depends, Form
 from fastapi_cloudauth.firebase import FirebaseClaims
 from api.auth.firebase import get_current_user
 from api.db.models.discussions import create_discussion
+from api.models.discussions_model import Topics
 
 
 router = APIRouter()
@@ -10,11 +11,12 @@ router = APIRouter()
 
 @router.post("/{topic}/threads", summary="", description="", tags=["discussions"])
 def post_discussion_thread(
-    topic: str,
+    topic: Topics,
     title: str = Form(...),
     content:  str = Form(...),
     current_user: FirebaseClaims = Depends(get_current_user),
 ):
+
     discussion = create_discussion(
         title, content, topic, datetime.now(), current_user.user_id
     )
