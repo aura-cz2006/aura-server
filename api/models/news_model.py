@@ -17,7 +17,8 @@ class NewsItem(BaseModel):
     id: str
     newstype: NewsType
     date: Optional[datetime]
-    location: dict = ({'lat': 0.0, 'lng': 0.0})
+    location : str
+    # location: dict = ({'lat': 0.0, 'lng': 0.0})
 
 
 class DengueNewsItem(NewsItem):

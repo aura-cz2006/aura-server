@@ -14,6 +14,7 @@ router = APIRouter()
 news_data = sample_news_data
 
 
+
 @router.get("/",
             # response_model=list[news_item_response_model],
             summary="Get news items",
