@@ -15,6 +15,7 @@ peewee = "^3.14.10"
 PyMySQL = "^1.0.2"
 firebase-admin = "^5.2.0"
 fastapi-cloudauth = "^0.4.3"
+python-dotenv = "^0.20.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

@@ -1,6 +1,9 @@
 version: '3.3'
 services:
     api-server:
+        networks:
+            dockernet:
+                ipv4_address: 172.28.1.1
         # network_mode: "host"
         build: .
         ports:
@@ -10,14 +13,19 @@ services:
     db:
         image: mysql:5.7
         restart: always
+        env_file:
+            - ./secrets/.env
+        networks:
+            dockernet:
+                ipv4_address: 172.28.1.2
         environment:
-            MYSQL_DATABASE: 'db'
+            MYSQL_DATABASE: "$$MYSQL_DB_NAME"
             # So you don't have to use root, but you can if you like
-            MYSQL_USER: 'user'
+            MYSQL_USER: "$$MYSQL_USERNAME"
             # You can use whatever password you like
-            MYSQL_PASSWORD: 'password'
+            MYSQL_PASSWORD: "$$MYSQL_PASSWORD"
             # Password for root access
-            MYSQL_ROOT_PASSWORD: 'password'
+            MYSQL_ROOT_PASSWORD: "$$MYSQL_PASSWORD"
         ports:
             # <Port exposed> : < MySQL Port running inside container>
             - '3306:3306'
@@ -33,3 +41,10 @@ services:
         restart: always
         ports:
             - 8080:8080
+
+networks:
+    dockernet:
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.28.0.0/16

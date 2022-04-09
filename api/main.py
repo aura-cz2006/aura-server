@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
+from dotenv import load_dotenv
+
 from .auth.firebase import creds_path
 from .auth import firebase
 from .db.database import conn as db_conn
@@ -36,6 +38,7 @@ print(f"secrets path: {creds_path}")
 
 @app.on_event("startup")
 async def startup():
+    load_dotenv('../secrets/.env')
     firebase_app = firebase.firebase_app  # init firebase
     if db_conn.is_closed():
         db_conn.connect()

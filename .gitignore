@@ -4,3 +4,4 @@ __pycache__
 db_data
 secrets
 my-db
+.env
