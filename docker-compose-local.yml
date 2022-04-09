@@ -39,8 +39,14 @@ services:
     adminer:
         image: adminer
         restart: always
+        networks:
+            dockernet:
+                ipv4_address: 172.28.1.3
+
         ports:
             - 8080:8080
+        expose:
+            - '8080'
 
 networks:
     dockernet:

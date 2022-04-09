@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from dotenv import load_dotenv
 
-from .auth.firebase import creds_path
 from .auth import firebase
 from .db.database import conn as db_conn
 from .routers.login import post as login_post
@@ -32,8 +31,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-print(f"secrets path: {creds_path}")
 
 
 @app.on_event("startup")
@@ -138,9 +135,6 @@ app.include_router(
 
 # static files
 app.mount("/static", StaticFiles(directory="api/static"), name="static")
-
-
-print(__name__)
 
 
 @ app.get("/", summary="root route", description="used just to test ping the server", tags=["root"])

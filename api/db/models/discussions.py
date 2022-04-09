@@ -35,6 +35,10 @@ def get_discussions():
 
 def get_discussion(id: str):
     data = DbDiscussion.get(DbDiscussion.id == id).__data__
+    user_id = data['author_user_id']
+    print(user_id)
+    user = DbUser.get(DbUser.uid == user_id).__data__
+    print(user)
     data.__setitem__("liked_by", [])
     data.__setitem__("comments_by", [])
     return data
