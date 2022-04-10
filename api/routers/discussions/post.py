@@ -21,5 +21,4 @@ def post_discussion_thread(
         title, content, topic, datetime.now(), current_user.user_id
     )
 
-    id = "9"  # todo: get this from db
     return {"status": "Discussion created successfully", "createdDiscussion": discussion}

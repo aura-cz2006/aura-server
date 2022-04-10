@@ -12,7 +12,7 @@ class DbDiscussionComment(DbBaseModel):
     comment_id = IntegerField(primary_key=True)
     discussion_id = ForeignKeyField(DbDiscussion)
     timestamp = DateTimeField()
-    author_user_id = ForeignKeyField(DbUser)
+    author_user_id = CharField(max_length=255)
     content = CharField(max_length=255)
 
     class Meta:
@@ -25,16 +25,15 @@ def get_comments_of_single_discussion(discussion_id: int):
     comments = []
     for discussion_comment in discussion_comments:
         comment = dict(discussion_comment.__data__)
-        print(comment)
+
         user_id = comment["author_user_id"]
-        print(f"user id: {user_id}")
-        # user = auth.get_user(user_id)
-        # comment = comment.__delitem__("author_user_id")
-        # comment = comment.__setitem__("author", {
-        #     "id": user_id,
-        #     # "displayName": user.display_name
-        # }
-        # )
+        user = auth.get_user(user_id)
+
+        del comment["author_user_id"]
+        comment.__setitem__("author", {
+            "id": user_id,
+            "displayName": user.display_name
+        })
         comments.append(comment)
     return comments
 
@@ -44,6 +43,7 @@ def add_comment_to_discussion(
     current_user_id: str,
     content: str
 ):
+    print(f"add_comment_to_discussion {current_user_id}")
     comment_object = DbDiscussionComment(
         discussion_id=discussion_id,
         timestamp=datetime.now(),
