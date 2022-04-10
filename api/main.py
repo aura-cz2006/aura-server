@@ -13,7 +13,7 @@ from .routers.discussions import get as discussions_get, post as discussions_pos
 from .routers.discussions.comments import post as discussions_comments_post, delete as discussions_comments_delete
 from .routers.meetups import get as meetups_get, post as meetups_post, patch as meetups_patch, delete as meetups_delete
 from .routers.meetups.comments import post as meetups_comments_post, delete as meetups_comments_delete
-from .routers.proxy import taxis as proxy_taxis, buses as proxy_buses, amenities as proxy_amenities
+from .routers.proxy import taxis as proxy_taxis, buses as proxy_buses, amenities as proxy_amenities, market_closure as proxy_market_closure
 
 print(f"db hostname is: {os.getenv('MYSQL_HOSTNAME')}")
 
@@ -134,6 +134,11 @@ app.include_router(
 app.include_router(
     proxy_amenities.router,
     prefix="/proxy/amenities"
+)
+
+app.include_router(
+    proxy_market_closure.router,
+    prefix="/proxy/market_closure"
 )
 
 
