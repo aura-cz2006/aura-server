@@ -1,6 +1,7 @@
 import datetime
 from peewee import *
 from datetime import datetime
+import firebase_admin.auth as auth
 
 from api.db.db_base_model import DbBaseModel
 from .users import DbUser
@@ -23,7 +24,18 @@ def get_comments_of_single_discussion(discussion_id: int):
         DbDiscussionComment.discussion_id == discussion_id)
     comments = []
     for discussion_comment in discussion_comments:
-        comments.append(discussion_comment.__data__)
+        comment = dict(discussion_comment.__data__)
+        print(comment)
+        user_id = comment["author_user_id"]
+        print(f"user id: {user_id}")
+        # user = auth.get_user(user_id)
+        # comment = comment.__delitem__("author_user_id")
+        # comment = comment.__setitem__("author", {
+        #     "id": user_id,
+        #     # "displayName": user.display_name
+        # }
+        # )
+        comments.append(comment)
     return comments
 
 
