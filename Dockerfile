@@ -3,7 +3,6 @@ RUN mkdir /code
 RUN mkdir /code/api
 
 COPY /api /code/api
-COPY /secrets/.env /code/api
 COPY poetry.lock /code
 COPY pyproject.toml /code
 
