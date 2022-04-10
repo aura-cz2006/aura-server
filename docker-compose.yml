@@ -1,11 +1,13 @@
 version: '3.3'
 services:
     api-server:
+        image: "ghcr.io/aura-cz2006/aura-server:latest"
+        env_file:
+            - ./secrets/.env
         networks:
             dockernet:
                 ipv4_address: 172.28.1.1
         # build: .
-        image: "ghcr.io/aura-cz2006/aura-server:latest"
         ports:
             - '80:8000'
         volumes:
@@ -18,14 +20,16 @@ services:
         networks:
             dockernet:
                 ipv4_address: 172.28.1.2
-        environment:
-            MYSQL_DATABASE: "$$MYSQL_DB_NAME"
-            # So you don't have to use root, but you can if you like
-            MYSQL_USER: "$$MYSQL_USERNAME"
-            # You can use whatever password you like
-            MYSQL_PASSWORD: "$$MYSQL_PASSWORD"
-            # Password for root access
-            MYSQL_ROOT_PASSWORD: "$$MYSQL_PASSWORD"
+            # environment:
+            # MYSQL_ROOT_HOST: '172.*.*.*'
+
+            # MYSQL_DATABASE: "$$MYSQL_DB_NAME"
+            # # So you don't have to use root, but you can if you like
+            # MYSQL_USER: "$$MYSQL_USERNAME"
+            # # You can use whatever password you like
+            # MYSQL_PASSWORD: "$$MYSQL_PASSWORD"
+            # # Password for root access
+            # MYSQL_ROOT_PASSWORD: "$$MYSQL_PASSWORD"
         ports:
             # <Port exposed> : < MySQL Port running inside container>
             - '3306:3306'

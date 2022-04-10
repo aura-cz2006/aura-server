@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
@@ -13,6 +14,8 @@ from .routers.discussions.comments import post as discussions_comments_post, del
 from .routers.meetups import get as meetups_get, post as meetups_post, patch as meetups_patch, delete as meetups_delete
 from .routers.meetups.comments import post as meetups_comments_post, delete as meetups_comments_delete
 from .routers.proxy import taxis as proxy_taxis, buses as proxy_buses, amenities as proxy_amenities
+
+print(f"db hostname is: {os.getenv('MYSQL_HOSTNAME')}")
 
 description = """
 Aura API is designed to be consumed by the Aura Mobile App
@@ -35,8 +38,8 @@ app.add_middleware(
 
 @app.on_event("startup")
 async def startup():
-    load_dotenv('../secrets/.env')
     firebase_app = firebase.firebase_app  # init firebase
+
     if db_conn.is_closed():
         db_conn.connect()
 
@@ -53,6 +56,7 @@ app.include_router(
     login_post.router,
     prefix="/login"
 )
+
 
 # news
 app.include_router(
@@ -145,7 +149,7 @@ def read_root():
 # debug
 def start_dev():
     """Launched with `poetry run start_dev` at root level"""
-    uvicorn.run("api.main:app", host="0.0.0.0", port=8008, reload=True)
+    uvicorn.run("api.main:app", host="0.0.0.0", port=8088, reload=True)
 
 
 def start_prod():

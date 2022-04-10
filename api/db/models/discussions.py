@@ -1,5 +1,6 @@
 import datetime
 from peewee import *
+import firebase_admin.auth as auth
 
 from ..db_base_model import DbBaseModel
 from .users import DbUser
@@ -17,30 +18,43 @@ class DbDiscussion(DbBaseModel):
         db_table = 'discussions'
 
 
+def add_discussion_data(discussion):
+    user_id = discussion['author_user_id']
+    print(user_id)
+    user = auth.get_user(user_id)
+    print(user.display_name)
+
+    discussion = dict(discussion)
+
+    discussion.__delitem__("author_user_id")
+    discussion.__setitem__("author", {
+        "id": user_id,
+        "displayName": user.display_name
+    })
+
+    discussion.__setitem__("liked_by", [])
+
+    from .discussion_comments import get_comments_of_single_discussion
+    comments = get_comments_of_single_discussion(discussion['id'])
+    discussion.__setitem__("comments", comments)
+
+    return discussion
+
+
 def get_discussions():
     query = DbDiscussion.select()
     print(f"length of query return: {len(query)}")
     discussions = []
     for discussion in query:
-        data = discussion.__data__
-        data.__setitem__("liked_by", [])
-
-        from .discussion_comments import get_comments_of_single_discussion
-        comments = get_comments_of_single_discussion(discussion.id)
-        data.__setitem__("comments", comments)
-        discussions.append(discussion.__data__)
+        data = add_discussion_data(discussion.__data__)
+        discussions.append(data)
 
     return discussions
 
 
 def get_discussion(id: str):
-    data = DbDiscussion.get(DbDiscussion.id == id).__data__
-    user_id = data['author_user_id']
-    print(user_id)
-    user = DbUser.get(DbUser.uid == user_id).__data__
-    print(user)
-    data.__setitem__("liked_by", [])
-    data.__setitem__("comments_by", [])
+    discussion = DbDiscussion.get(DbDiscussion.id == id).__data__
+    data = add_discussion_data(discussion.__data__)
     return data
 
 
