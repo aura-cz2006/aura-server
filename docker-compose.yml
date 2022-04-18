@@ -3,8 +3,7 @@ services:
     api-server:
         image: "ghcr.io/aura-cz2006/aura-server:latest"
         depends_on:
-            db:
-                condition: service_healthy
+            - db
         env_file:
             - ./secrets/.env
         networks:
