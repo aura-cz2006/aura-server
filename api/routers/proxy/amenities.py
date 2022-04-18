@@ -4,6 +4,8 @@ import requests
 
 router = APIRouter()
 #token is expired should change to post req
+# @router.post("/"),
+# def read_new_token():
 token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg2NzEsInVzZXJfaWQiOjg2NzEsImVtYWlsIjoia2tob25nMDAxQGUubnR1LmVkdS5zZyIsImZvcmV2ZXIiOmZhbHNlLCJpc3MiOiJodHRwOlwvXC9vbTIuZGZlLm9uZW1hcC5zZ1wvYXBpXC92MlwvdXNlclwvc2Vzc2lvbiIsImlhdCI6MTY0OTIzMTk2NSwiZXhwIjoxNjQ5NjYzOTY1LCJuYmYiOjE2NDkyMzE5NjUsImp0aSI6ImI3NDJmZDNjNDEzNGVjMTBmMGNiMGIzMzI4NjE5OTJlIn0.HePZ8JaoPOsvHRIL3eZ78Doths1WOE3yuAI6vGShaXA'
 
 @router.get("/{query}",
